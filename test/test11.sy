@@ -1,0 +1,26 @@
+// 测试程序11: 作用域与块、常量数组
+int main() {
+    const int SID1 = 23050721;
+    const int SID2 = 23080508;
+    putint(SID1); putch(32); putint(SID2); putch(10);
+
+    const int base[3] = {2, 4, 6};
+    int res;
+    res = 0;
+    {
+        int i;
+        i = 0;
+        while (i < 3) {
+            res = res + base[i];
+            i = i + 1;
+        }
+    }
+    {
+        int res_shadow;
+        res_shadow = 100; // 局部遮蔽
+        if (res_shadow > 50) putint(res_shadow);
+        putch(10);
+    }
+    return res;
+}
+

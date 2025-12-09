@@ -1,0 +1,17 @@
+// 测试程序3: while循环
+int main() {
+    const int SID1 = 23050721;
+    const int SID2 = 23080508;
+    putint(SID1); putch(32); putint(SID2); putch(10);
+
+    int i;
+    int sum;
+    i = 0;
+    sum = 0;
+    while (i < 10) {
+        sum = sum + i;
+        i = i + 1;
+    }
+    return sum;
+}
+

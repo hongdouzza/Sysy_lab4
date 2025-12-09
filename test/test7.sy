@@ -1,0 +1,18 @@
+// 测试程序7: while、break、continue
+int main() {
+    const int SID1 = 23050721;
+    const int SID2 = 23080508;
+    putint(SID1); putch(32); putint(SID2); putch(10);
+
+    int sum, i;
+    sum = 0;
+    i = 0;
+    while (i < 20) {
+        i = i + 1;
+        if (i % 2 == 1) continue;
+        sum = sum + i;
+        if (sum > 30) break;
+    }
+    return sum;
+}
+

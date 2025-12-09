@@ -1,0 +1,13 @@
+// 测试程序1: 简单的函数定义和调用
+int main() {
+    const int SID1 = 23050721;
+    const int SID2 = 23080508;
+    putint(SID1); putch(32); putint(SID2); putch(10);
+
+    int a;
+    int b;
+    a = 10;
+    b = 20;
+    return a + b;
+}
+

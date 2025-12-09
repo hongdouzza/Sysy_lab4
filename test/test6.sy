@@ -1,0 +1,16 @@
+// 测试程序6: if-else 与逻辑运算
+int main() {
+    const int SID1 = 23050721;
+    const int SID2 = 23080508;
+    putint(SID1); putch(32); putint(SID2); putch(10);
+
+    int x, y;
+    x = 5;
+    y = 10;
+    if (x < y && y != 0) {
+        return x + y;
+    } else {
+        return x - y;
+    }
+}
+

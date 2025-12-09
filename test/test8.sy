@@ -1,0 +1,24 @@
+// 测试程序8: 一维数组与函数参数
+int add_arr(int n, int a[]) {
+    int i, s;
+    i = 0;
+    s = 0;
+    while (i < n) {
+        s = s + a[i];
+        i = i + 1;
+    }
+    return s;
+}
+
+int main() {
+    const int SID1 = 23050721;
+    const int SID2 = 23080508;
+    putint(SID1); putch(32); putint(SID2); putch(10);
+
+    int arr[5];
+    arr[0] = 1; arr[1] = 2; arr[2] = 3; arr[3] = 4; arr[4] = 5;
+    int res;
+    res = add_arr(5, arr);
+    return res;
+}
+
